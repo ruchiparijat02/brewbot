@@ -10,7 +10,8 @@
 //  Don't forget the comma between blocks!
 // ============================================================
 
-const APP_VERSION = "v1.0"; // bump this every time you release
+
+const APP_VERSION = "v1.1"; // bump this every time you release
 
 const BOT_GREETING =
   "Hi! I'm BrewBot ☕ Ask me about our menu, timings, location, wifi or offers.";
@@ -18,7 +19,7 @@ const BOT_GREETING =
 const FALLBACK_ANSWER =
   "Hmm, I'm not sure about that yet. Try asking about menu, timings, location, wifi or offers!";
 
-const SUGGESTIONS = ["Menu", "Timings", "Location", "Wifi", "Offers"];
+const SUGGESTIONS = ["Menu", "Timings", "Location", "Wifi", "Offers", "Parking"];
 
 const RESPONSES = [
   {
@@ -49,5 +50,9 @@ const RESPONSES = [
   {
     keywords: ["thanks", "thank you", "bye"],
     answer: "Anytime! Have a great day ☕",
+  },
+  {
+    keywords: ["parking", "park", "car"],
+    answer: "Yes! Free parking for 20 cars behind the café.",
   },
 ];

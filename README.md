@@ -40,4 +40,4 @@ Connected to Netlify: every push/merge to `main` goes live in under a minute.
 Pull Requests get their own **Deploy Preview** link for testing before merging.
 
 ## Changelog
-- **v1.0** — First release: menu, timings, location, wifi, offers
+- **v1.1** — BrewBot can answer parking questions
