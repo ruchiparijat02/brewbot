@@ -1,0 +1,7 @@
+# Files Git should never track
+.DS_Store
+Thumbs.db
+.vscode/
+.env
+node_modules/
+.netlify/

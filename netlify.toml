@@ -1,0 +1,4 @@
+# Tells Netlify how to publish this site.
+# No build step needed — it's plain HTML/CSS/JS, so we publish the root folder.
+[build]
+  publish = "."

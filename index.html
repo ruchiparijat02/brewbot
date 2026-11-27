@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrewBot – Café Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="chat">
+    <!-- HEADER: change the bot name or tagline here (good first edit!) -->
+    <header class="chat__header">
+      <div class="chat__avatar">☕</div>
+      <div>
+        <h1 class="chat__title">BrewBot</h1>
+        <p class="chat__subtitle">Your friendly café assistant</p>
+      </div>
+    </header>
+
+    <!-- Messages appear here -->
+    <section id="messages" class="chat__messages" aria-live="polite"></section>
+
+    <!-- Quick-reply buttons -->
+    <div id="suggestions" class="chat__suggestions"></div>
+
+    <!-- Input box -->
+    <form id="chat-form" class="chat__form">
+      <input id="chat-input" type="text" placeholder="Ask me about menu, timings, wifi..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+
+    <footer class="chat__footer">
+      BrewBot <span id="version"></span> · Made in our Git &amp; GitHub session
+    </footer>
+  </main>
+
+  <!-- Order matters: answers first, then the logic that uses them -->
+  <script src="responses.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
